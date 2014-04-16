@@ -3,3 +3,8 @@ get '/' do
   erb :index
 end
 
+get '/pages/sample' do
+
+	erb :sample
+end
+
