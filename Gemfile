@@ -22,7 +22,7 @@ gem 'shotgun'
 
 gem 'awesome_print'
 
-gem 'BCrypt'
+gem 'bcrypt'
 
 group :test do
   gem 'shoulda-matchers'
