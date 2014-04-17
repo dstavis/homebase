@@ -1,10 +1,6 @@
 get '/' do
   # Look in app/views/index.erb
-  erb :index
+  erb :login
 end
 
-get '/pages/sample' do
-
-	erb :sample
-end
 
