@@ -1,4 +1,4 @@
-get '/' do
+rakget '/' do
   # Look in app/views/index.erb
   erb :index
 end
