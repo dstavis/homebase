@@ -1,13 +1,28 @@
 get '/' do
-  # Look in app/views/index.erb
-  erb :index
+
+	if session[:user_id]
+	  erb :index
+	else
+		redirect'/sessions/new'
+	end
+
 end
 
-get '/pages/sample' do
+get '/sessions/new' do
+	#login or create account
+	@page = :login_or_create_account
+	erb :login_flow
+end
 
-	erb :sample
+post '/sessions' do
+	
 end
 
 #Write the GET route for "join group" links
 #Should create a session key containing the id of the group the user has permission to join
 #During the create account flow, if this key has a value in the session, the user should automatically be added to the group corresponding with this value
+
+get '/join/group/:id' do
+	session[:join_group] = params[:id]
+	redirect '/sessions/new'
+end
