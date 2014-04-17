@@ -1,12 +1,8 @@
 get '/' do
   # Look in app/views/index.erb
-  erb :index
+  erb :login
 end
 
-get '/pages/sample' do
-
-	erb :sample
-end
 
 #Write the GET route for "join group" links
 #Should create a session key containing the id of the group the user has permission to join
