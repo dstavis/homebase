@@ -22,6 +22,8 @@ gem 'shotgun'
 
 gem 'awesome_print'
 
+gem 'BCrypt'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
