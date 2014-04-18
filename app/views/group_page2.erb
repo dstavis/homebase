@@ -37,13 +37,6 @@
 	</div>
 </div>
 
-	<div class="craigslist_form">
-		<form action="/listings/url" method="post">
-			Add a listing to the page: <input type="text" style="width:400px; margin:auto; color:black;"name="cl_url">
-			<input type="submit" value="submit">
-		</form>
-	</div>
-
 			<% (Listing.all).each do |listing| %>
 		<div class="all_listing col-md-12">
 			<div class="photo col-md-2">
