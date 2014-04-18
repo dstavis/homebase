@@ -67,7 +67,7 @@ var loginOrCreateUser = function(userData){
         data: userData
     }).done(function (userPage) {
     	debugger
-        window.location.href = userPage;
+        // window.location.href = userPage;
     });
 }
 
