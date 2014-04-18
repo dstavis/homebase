@@ -45,7 +45,6 @@ var addEventListeners = function () {
 
 
 var loggedInHandler = function (response) {
-    console.log("Successfully authenticated. Now creating user data.")
 
     FB.api('/me?fields=email, picture', function (response) {
         var userData = {
@@ -53,42 +52,17 @@ var loggedInHandler = function (response) {
             facebook_id: response.id,
             picture_url: response.picture.data.url
         };
-        console.log("Successfully created user data. Now logging in.")
         loginOrCreateUser(userData);
     });
 };
 
 var loginOrCreateUser = function(userData){
-	console.log("Beginning ajax")
-	console.log(userData)
+    console.log(userData)
     $.ajax({
         url: '/session/facebook_login/',
         method: 'post',
         data: userData
     }).done(function (userPage) {
-    	debugger
-        // window.location.href = userPage;
+        window.location.href = userPage;
     });
-}
-
-var sendInvite = function () {
-    groupURL = "/join/group/" + current_user().group_id
-
-    FB.ui({
-        method: 'send',
-        link: groupURL
-    });
-}
-
-var grabUserpic = function (userID) {
-    FB.api(userID, {
-        fields: 'picture'
-    }, function (response) {
-        picUrl = response.picture.data.url
-        userPic = $("<img src=''>").attr("src", picUrl)
-    })
-}
-
-var appendUserPic = function (parentNode, userID) {
-    $(parentNode).append(grabUserpic(userID))
 }
