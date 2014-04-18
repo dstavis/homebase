@@ -47,6 +47,16 @@ body {
   font-family: 'Oswald';
 }
 
+.group {
+  border-style: solid;
+  width: 75%;
+  margin: auto;
+  font-family: 'Oswald';
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+}
+
 .group_title {
   text-align: center;
   color: #d7ceb2;
@@ -65,12 +75,20 @@ table {
   margin: auto;
 }
 
+td {
+  border-style: solid;
+}
 
+.preference {
+  border-style: solid;
+  float: auto;
+  font-size: 17px;
+}
 
 
 .photo {
   border-style: solid;
-  margin-left: 5%;
+  margin-left: 15%;
 }
 
 
