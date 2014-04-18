@@ -19,6 +19,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'nokogiri'
+
 gem 'awesome_print'
 
 gem 'httparty'

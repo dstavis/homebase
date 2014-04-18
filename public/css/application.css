@@ -1,6 +1,6 @@
 .big_container {
     margin: 20px auto;
-    width: 600px;
+    width: 650px;
     padding: 0px 20px 20px 20px;
     text-align: center;
     border-radius: 25px;
@@ -49,7 +49,7 @@ body {
 }
 
 .group {
-  border-style: solid;
+  /*border-style: solid;*/
   width: 75%;
   margin: auto;
   font-family: 'Oswald';
@@ -72,29 +72,38 @@ img {
   padding: 5%;
 }
 
+
 table {
   margin: auto;
 }
 
 td {
-  border-style: solid;
+  /*border-style: solid;*/
 }
 
 .preference {
-  border-style: solid;
+  /*border-style: solid;*/
   float: auto;
   font-size: 17px;
+  background: rgba(25, 25, 25, .5);
+}
+
+.top_row {
+  /*border-style: solid;*/
 }
 
 
 .photo {
-  border-style: solid;
+  /*border-style: solid;*/
   margin-left: 15%;
 }
 
 .all_listing {
-  border-style: solid;
-  margin-left: 15%;
+  /*border-style: solid;*/
+  display: inline;
 }
 
+.listing_feed {
+  margin-top:10px;
+}
 

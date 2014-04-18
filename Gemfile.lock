@@ -97,6 +97,7 @@ DEPENDENCIES
   factory_girl
   faker
   httparty
+  nokogiri
   pg
   rack-test
   rake
