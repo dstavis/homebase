@@ -1,0 +1,40 @@
+<div style="background-color:white">
+	<h1>Create a group below:</h1>
+	<form action='/groups' method="post">
+		<div class="form-group">
+			<label>Group Name:</label>
+	  	<input type="text" name="name" placeholder="Group name"><br>
+	  	
+	  	<label>Max Price:</label>
+	  	<input type="text" name="max_price" placeholder="Max Price"><br><br>
+
+			<label>Number of Bathrooms:</label>
+	  	<select name="bedrooms">
+	  		<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select><br><br>
+
+			<label>Number of Bedrooms:</label>
+	  	<select name="bathrooms">
+	  		<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select><br><br>
+
+			<label>Neighborhood:</label>
+	  	<select name="neighborhood">
+				<option>SOMA</option>
+				<option>Marina</option>
+				<option>Chinatown</option>
+				<option>North Beach</option>
+			</select>
+
+		</div>
+		<button type="submit">CREATE YOUR GROUP</button>
+	</form>
+</div>

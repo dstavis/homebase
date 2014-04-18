@@ -51,12 +51,6 @@ end
 
 
 
-# Shows all groups:
-get '/groups' do
-  erb :all_groups
-end
 
-get '/groups/:group_id' do
-  @group = Group.find(params[:group_id])
-  erb :group_page
-end
+
+
