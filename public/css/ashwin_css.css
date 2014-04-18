@@ -1,0 +1,25 @@
+.big_container_user {
+  margin: 20px auto;
+  width: 600px;
+  height: 300px;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+  border-radius: 25px;
+  border: black;
+  border-style: solid;
+  background_color: black;
+  opacity: 1.5;
+}
+
+#user_profile_pic {
+	width: 200px;
+  height: 200px;
+  padding: 5%;
+  float:left;
+}
+
+#listing_input_form {
+	width:600px;
+	margin:auto;
+	color:black;
+}

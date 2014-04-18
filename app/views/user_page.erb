@@ -1,22 +1,17 @@
-<div style="background-color:white">
-	<h1>Welcome!</h1>
+<div class="big_container_user">
+	<h1>Welcome, <%= @user.username %>!</h1>
+		<img id="user_profile_pic" src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt="">
 	<br>
-	User Id: <%= @user.id %><br>
-	Username: <%= @user.username %><br>
-	User email: <%= @user.email %><br><br>
 
 	<% if @user.group == nil %>
 		<form action='/groups/new' method="get">
-			<button type="submit">CREATE A GROUP</button>
+			<button class="btn btn-success" type="submit">Create a Group</button>
 		</form><br><br>
 	<% else %>
-		<h2>Here is the group you are part of:</h2>
-		<a href = "/groups/<%=@user.group.id%>"><h2><%= @user.group.name %></h2></a>
+		<h2>Your group:</h2>
+		<form action="/groups/<%=@user.group.id%>" method="get">
+			<button class="btn btn-warning" type="submit"><%= @user.group.name %></button>
+		</form><br><br>
 	<% end %>
 
-	<h2>Here are the groups you can join:</h2><br>
-
-	<% Group.all.each do |group| %>
-		<a href="/groups/<%=group.id%>"><%= group.name %></a><br>
-	<% end %>
 </div>
