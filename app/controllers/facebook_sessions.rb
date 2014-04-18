@@ -19,3 +19,4 @@ end
 get '/join/group/:id' do
 	session[:join_group] = params[:id]
 	redirect '/session/login'
+end

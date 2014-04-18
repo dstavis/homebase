@@ -47,7 +47,7 @@ get '/groups/:group_id' do
   	@user = User.find(session[:user_id])
   end
 
-  erb :group_page2
+  erb :group_page
 end
 
 post '/groups/:group_id/join' do
