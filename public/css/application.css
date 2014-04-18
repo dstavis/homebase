@@ -26,7 +26,7 @@ th {
   color: #B4cde5;
   text-shadow: 1px 1px white, -1px -1px #444 
   color: #d7ceb2;
-  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
   letter-spacing: 5px;
   font-family: 'Oswald';
 }
@@ -35,7 +35,7 @@ th {
   color: rgb(231, 186, 186);
   text-shadow: 1px 1px white, -1px -1px #444 
   color: #d7ceb2;
-  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
   letter-spacing: 5px;
   font-family: 'Oswald';}
 
@@ -44,4 +44,51 @@ body {
   background-image: url('http://24.media.tumblr.com/09d144943802daad98c4556e0961eb66/tumblr_mzzqxabKjH1st5lhmo1_1280.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Oswald';
 }
+
+.group {
+  border-style: solid;
+  width: 75%;
+  margin: auto;
+  font-family: 'Oswald';
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+}
+
+.group_title {
+  text-align: center;
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  letter-spacing: 5px;
+  font-family: 'Oswald';
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  padding: 5%;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  border-style: solid;
+}
+
+.preference {
+  border-style: solid;
+  float: auto;
+  font-size: 17px;
+}
+
+
+.photo {
+  border-style: solid;
+  margin-left: 15%;
+}
+
+
