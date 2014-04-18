@@ -1,16 +1,48 @@
-<div style="background-color:white">
-	<h2>Here is your group's name: <%= @group.name %></h2><br><br>
-	<h2>Here are the people in this group:</h2><br>
-	<% @people_in_group.each do |person| %>
-		<%= person.username %><br>
-	<% end %>
+<div class="group">
+	<h2 class="group_title"><%= @group.name %></h2><br><br>
+	<div class="row">
+		<div class="top_row col-md-10">
+		<div class="photo col-md-4">
+	<table >
+		<tr>
+			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+		</tr>
+		<tr>
+			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+		</tr>
+	</table>
+	</div>
 
-	<br>
-	<h2>Here is your group's search profile: </h2>
-	<h3>Max Price: $<%=@searchprofile.max_price%></h3>
-	<h3>Number of bedrooms: <%=@searchprofile.num_bedrooms%></h3>
-	<h3>Number of bathrooms: <%=@searchprofile.num_bathrooms%></h3>
-	<h3>Neighborhood: <%=@searchprofile.neighborhood%></h3><br>
+	<div class="preference col-md-4">
+			<h3>Group Preference</h3>
+			<h3>Max Price: $<%=@searchprofile.max_price%></h3>
+			<h3>Number of bedrooms: <%=@searchprofile.num_bedrooms%></h3>
+			<h3>Number of bathrooms: <%=@searchprofile.num_bathrooms%></h3>
+			<h3>Neighborhood: <%=@searchprofile.neighborhood%></h3><br>
+	</div>
+</div>
+
+	<div class="all_listing">
+	 		<% (Listing.all).each do |listing| %>
+			<div class="photo col-md-2">
+				<img class="apartment" src="<%= listing.picture_url %>" alt="">
+			</div>
+			<div class="listing col-md-6">
+				<ul>
+					<li><a href="<%= listing.source_url %>">Apartment URL</a></li>
+					<li><%= listing.price %></li>
+					<li><%=  listing.num_bedrooms%></li>
+					<li><%=  listing.num_bathrooms%></li>
+					<li><%=  listing.neighborhood%></li>
+				</ul>
+			</div>
+			<% end %>
+		</div>
+	
+
+	</div>
 	
 	<% if @user %>
 		<% if @user.group_id != @group.id %>
@@ -21,4 +53,5 @@
 	<% else %>
 		<h3>Login on the <a href="/">home</a> page to join this group</h3>
 	<% end %>
+</div>
 </div>
