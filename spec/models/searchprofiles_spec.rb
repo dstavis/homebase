@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe Searchprofile do
-	it { should belong_to (:group) }
+	it { should have_one(:group) }
 end

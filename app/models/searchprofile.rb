@@ -1,4 +1,4 @@
 class Searchprofile < ActiveRecord::Base
-  belongs_to :group
+  has_one :group
 
 end
