@@ -1,10 +1,47 @@
-.container {
+.big_container {
+    margin: 20px auto;
+    width: 600px;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+    border-radius: 25px;
+    opacity: 0.6;
+}
+
+.login_title {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  text-align: center;
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  letter-spacing: 5px;
+  font-family: 'Oswald';
 }
 
 th {
   text-align: left;
+}
+
+.login {
+  color: #B4cde5;
+  text-shadow: 1px 1px white, -1px -1px #444 
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  letter-spacing: 5px;
+  font-family: 'Oswald';
+}
+
+.signup {
+  color: rgb(231, 186, 186);
+  text-shadow: 1px 1px white, -1px -1px #444 
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  letter-spacing: 5px;
+  font-family: 'Oswald';}
+
+
+body {
+  background-image: url('http://24.media.tumblr.com/09d144943802daad98c4556e0961eb66/tumblr_mzzqxabKjH1st5lhmo1_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

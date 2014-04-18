@@ -85,7 +85,7 @@ end
 
 namespace :db do
   desc "Drop, create, and migrate the database"
-  task :reset => [:drop, :create, :migrate]
+  task :reset => [:drop, :create, :migrate, :seed, :prepare]
 
   desc "Create the databases at #{DB_NAME}"
   task :create do
@@ -118,11 +118,9 @@ namespace :db do
     puts "Current version: #{ActiveRecord::Migrator.current_version}"
   end
 
-  namespace :test do
-    desc "Migrate test database"
-    task :prepare do
-      system "rake db:migrate RACK_ENV=test"
-    end
+  desc "Migrate test database"
+  task :prepare do
+    system "rake db:migrate RACK_ENV=test"
   end
 end
 
