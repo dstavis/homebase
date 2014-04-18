@@ -9,7 +9,6 @@ $(document).ready(function() {
 	    });
 
 	    FB.Event.subscribe('auth.login', function(response) {
-	    	console.log("Something is happeniiiiing")
 		  if (response.status === 'connected') {
 		    loggedInHandler(response);
 		  } else if (response.status === 'not_authorized') {
@@ -40,8 +39,6 @@ var loggedInHandler = function(response){
     console.log(response);
   })
 }
-
-var 
 
 var sendInvite = function(){
 	groupURL = "/join/group/"+current_user().group_id
