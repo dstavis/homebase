@@ -25,6 +25,9 @@ gem 'awesome_print'
 
 gem 'httparty'
 
+gem 'pry'
+gem 'pry-nav'
+
 gem 'bcrypt'
 
 group :test do
