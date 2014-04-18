@@ -1,18 +1,28 @@
 <div class="group">
+	<% if @user %>
+		<% if @user.group_id != @group.id %>
+			<form action='/groups/<%=@group.id%>/join' method="post">
+				<button type="submit">JOIN THIS GROUP</button>
+			</form>
+		<% end %>
+	<% else %>
+		<h3>Login on the <a href="/">home</a> page to join this group</h3>
+	<% end %>
+	
 	<h2 class="group_title"><%= @group.name %></h2><br><br>
 	<div class="row">
 		<div class="top_row col-md-12">
 		<div class="photo col-md-4">
-	<table >
-		<tr>
-			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
-			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
-		</tr>
-		<tr>
-			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
-			<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
-		</tr>
-	</table>
+			<table >
+				<tr>
+					<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+					<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+					<td><img src="https://avatars3.githubusercontent.com/u/6128134?s=460" alt=""></td>
+				</tr>
+			</table>
 	</div>
 
 	<div class="preference col-md-4">
@@ -49,14 +59,6 @@
 		<% end %>
 </div>
 
-	<% if @user %>
-		<% if @user.group_id != @group.id %>
-			<form action='/groups/<%=@group.id%>/join' method="post">
-				<button type="submit">JOIN THIS GROUP</button>
-			</form>
-		<% end %>
-	<% else %>
-		<h3>Login on the <a href="/">home</a> page to join this group</h3>
-	<% end %>
+	
 </div>
 </div>
