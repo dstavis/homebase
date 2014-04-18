@@ -7,8 +7,37 @@
   border-radius: 25px;
   border: black;
   border-style: solid;
-  background_color: black;
+  background: rgba(25, 25, 25, .5);
   opacity: 1.5;
+  color: white;
+}
+
+.big_container_create_group {
+  margin: 20px auto;
+  width: 600px;
+  height: 400px;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+  border-radius: 25px;
+  border: black;
+  border-style: solid;
+  background: rgba(25, 25, 25, .5);
+  opacity: 1.5;
+  color: white;
+}
+
+.big_container_login {
+  margin: 20px auto;
+  width: 800px;
+  height: 750px;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+  border-radius: 25px;
+  border: black;
+  border-style: solid;
+  background: rgba(25, 25, 25, .5);
+  opacity: 1.5;
+  color: white;
 }
 
 #user_profile_pic {
