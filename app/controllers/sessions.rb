@@ -42,16 +42,19 @@ end
 
 get '/user/:user_id' do
   @user = User.find(params[:user_id])
-  @group = Group.find(@user.group_id)
+  @group = Group.find(@user.group_id) if @user.group_id != nil
   erb :user_page
 end
+
+
+
+
 
 
 # Shows all groups:
 get '/groups' do
   erb :all_groups
 end
-
 
 get '/groups/:group_id' do
   @group = Group.find(params[:group_id])
