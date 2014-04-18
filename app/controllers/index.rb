@@ -1,5 +1,5 @@
 get '/' do
-  # Look in app/views/index.erb
+  session.clear
   erb :login
 end
 

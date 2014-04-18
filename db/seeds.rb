@@ -24,7 +24,10 @@ Listing.create(price: 1800, num_bedrooms: 2, num_bathrooms: 1, neighborhood: "Te
 								picture_url: "http://images.craigslist.org/00O0O_deHOr8GlgD8_600x450.jpg")
 
 
-User.create(username: "ashwizzle", password: "ashwin", email: "ashwin@ashwin.com")
-User.create(username: "ninizzle", password: "nina", email: "nina@nina.com")
-User.create(username: "kellizle", password: "kelley", email: "kelley@kelley.com")
-User.create(username: "dizzle", password: "david", email: "david@david.com")
+Group.create(:name => "Group 1")
+Group.create(:name => "Group 2")
+Group.create(:name => "Group 3")
+Group.create(:name => "Group 4")
+Group.create(:name => "Group 5")
+Group.create(:name => "Group 6")
+Group.create(:name => "Group 7")
