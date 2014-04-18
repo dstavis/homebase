@@ -10,12 +10,11 @@ end
 
 get '/sessions/new' do
 	#login or create account
-	@page = :login_or_create_account
-	erb :login_flow
+	erb :_facebook_login
 end
 
 post '/sessions' do
-	
+
 end
 
 #Write the GET route for "join group" links
