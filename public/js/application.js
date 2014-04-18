@@ -41,6 +41,8 @@ var addEventListeners = function () {
             });
         }
     });
+
+    $('.invite').click(sendInvite)
 };
 
 
@@ -65,3 +67,13 @@ var loginOrCreateUser = function(userData){
     }).done(function (userPage) {
         window.location.href = userPage;
     });
+}
+
+var sendInvite = function(e){
+     groupURL = "http://localhost:9393/join/group/"+current_user_group_id
+     
+		FB.ui({
+	  		method: 'send',
+	  		link: groupURL,
+		});
+}
