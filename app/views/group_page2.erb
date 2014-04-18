@@ -1,7 +1,7 @@
 <div class="group">
 	<h2 class="group_title"><%= @group.name %></h2><br><br>
 	<div class="row">
-		<div class="top_row col-md-10">
+		<div class="top_row col-md-12">
 		<div class="photo col-md-4">
 	<table >
 		<tr>
@@ -24,22 +24,22 @@
 	</div>
 </div>
 
-	<div class="all_listing">
 	 		<% (Listing.all).each do |listing| %>
-			<div class="photo col-md-2">
-				<img class="apartment" src="<%= listing.picture_url %>" alt="">
-			</div>
-			<div class="listing col-md-6">
-				<ul>
-					<li><a href="<%= listing.source_url %>">Apartment URL</a></li>
-					<li><%= listing.price %></li>
-					<li><%=  listing.num_bedrooms%></li>
-					<li><%=  listing.num_bathrooms%></li>
-					<li><%=  listing.neighborhood%></li>
-				</ul>
+			<div class="all_listing col-md-12">
+				<div class="photo col-md-2">
+					<img class="apartment" src="<%= listing.picture_url %>" alt="">
+				</div>
+				<div class="listing col-md-6">
+					<ul>
+						<li><a href="<%= listing.source_url %>">Apartment URL</a></li>
+						<li><%= listing.price %></li>
+						<li><%=  listing.num_bedrooms%></li>
+						<li><%=  listing.num_bathrooms%></li>
+						<li><%=  listing.neighborhood%></li>
+					</ul>
+				</div>
 			</div>
 			<% end %>
-		</div>
 	
 
 	</div>

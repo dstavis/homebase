@@ -88,6 +88,10 @@ td {
   background: rgba(25, 25, 25, .5);
 }
 
+.top_row {
+  border-style: solid;
+}
+
 
 .photo {
   border-style: solid;
@@ -97,6 +101,7 @@ td {
 .all_listing {
   border-style: solid;
   margin-left: 15%;
+  display: inline;
 }
 
 
