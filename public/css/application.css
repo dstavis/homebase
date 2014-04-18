@@ -23,12 +23,15 @@ th {
 .login {
     color: #B4cde5;
     text-shadow: 1px 1px white, -1px -1px #444 
-    background-color: black;
 }
 
 .signup {
   color: rgb(231, 186, 186);
   text-shadow: 1px 1px white, -1px -1px #444 }
+
+
+body {
+  background-image: url('http://24.media.tumblr.com/09d144943802daad98c4556e0961eb66/tumblr_mzzqxabKjH1st5lhmo1_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
