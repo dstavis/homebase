@@ -4,6 +4,7 @@
     padding: 0px 20px 20px 20px;
     text-align: center;
     border-radius: 25px;
+    opacity: 0.6;
 }
 
 .login_title {
@@ -11,9 +12,10 @@
   width: 600px;
   padding: 0px 20px 20px 20px;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #66ffff, 0 0 30px #66ffff, 0 0 40px #66ffff, 0 0 50px #66ffff, 0 0 75px #66ffff;
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
   letter-spacing: 5px;
+  font-family: 'Oswald';
 }
 
 th {
@@ -21,13 +23,21 @@ th {
 }
 
 .login {
-    color: #B4cde5;
-    text-shadow: 1px 1px white, -1px -1px #444 
+  color: #B4cde5;
+  text-shadow: 1px 1px white, -1px -1px #444 
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  letter-spacing: 5px;
+  font-family: 'Oswald';
 }
 
 .signup {
   color: rgb(231, 186, 186);
-  text-shadow: 1px 1px white, -1px -1px #444 }
+  text-shadow: 1px 1px white, -1px -1px #444 
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  letter-spacing: 5px;
+  font-family: 'Oswald';}
 
 
 body {
