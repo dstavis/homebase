@@ -1,20 +1,6 @@
 get '/' do
-
-	if session[:user_id]
-	  erb :index
-	else
-		redirect'/sessions/new'
-	end
-
-end
-
-get '/sessions/new' do
-	#login or create account
-	erb :_facebook_login
-end
-
-post '/sessions' do
-
+  session.clear
+  erb :login
 end
 
 #Write the GET route for "join group" links

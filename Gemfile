@@ -23,6 +23,8 @@ gem 'awesome_print'
 
 gem 'httparty'
 
+gem 'bcrypt'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
